@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akinloye Olumide — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">AO<span>.</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Full Stack Developer</p>
+          <h1 class="hero__name">Akinloye<br><span>Olumide</span></h1>
+          <p class="hero__bio">
+            I build systems that live on both sides of the stack — from polished,
+            responsive interfaces to resilient backend APIs. Based in Lagos, Nigeria.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="https://github.com/olumideakinloye" target="_blank" rel="noopener" class="btn btn--ghost">GitHub
+              ↗</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre class="code-card__body"><code><span class="c-kw">const</span> <span class="c-fn">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Olumide Akinloye"</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">"React"</span>, <span class="c-str">"Next.js"</span>,
+    <span class="c-str">"Node.js"</span>, <span class="c-str">"TypeScript"</span>,
+    <span class="c-str">"PostgreSQL"</span>
+  ],
+  <span class="c-key">location</span>: <span class="c-str">"Lagos, Nigeria 🇳🇬"</span>,
+  <span class="c-key">open</span>: <span class="c-bool">true</span>,
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <p class="section__eyebrow">About Me</p>
+          <h2 class="section__title">Engineer by trade,<br>problem-solver by nature.</h2>
+          <p class="about__text">
+            I'm a Computer Science student at Bowen University, Nigeria, with hands-on experience
+            building production-grade full-stack applications. I've architected multi-portal ISP
+            management systems, real-time chat apps, multiplayer games, and automated scheduling
+            systems — all the way from database schema to deployed UI.
+          </p>
+          <p class="about__text">
+            I care about clean code, thoughtful architecture, and interfaces that actually work
+            for real people. Currently seeking software internship opportunities in Lagos.
+          </p>
+          <a href="mailto:olumike3108@gmail.com" class="btn btn--primary">Get In Touch</a>
+        </div>
+        <div class="about__stats">
+          <div class="stat-card">
+            <span class="stat-card__number">5+</span>
+            <span class="stat-card__label">Projects Shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">3+</span>
+            <span class="stat-card__label">Years Building</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">FS</span>
+            <span class="stat-card__label">Full Stack</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">∞</span>
+            <span class="stat-card__label">Problems to Solve</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ PROJECTS ══════════════════════════════ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <p class="section__eyebrow">Selected Work</p>
+        <h2 class="section__title">What I've Built</h2>
+        <div class="projects__grid">
+
+          <article class="project-card project-card--featured">
+            <h3 class="project-card__title">NEWSWIRE</h3>
+            <p class="project-card__desc">
+              A high-performance, responsive, web-based news portal with advanced, multi-layered search filters. Built
+              with Vite + React.
+            </p>
+            <div class="project-card__preview">
+              <iframe src="https://news-portal-302.netlify.app/" style="border-radius: 20px;" width="100%"
+                height="500px" frameborder="0"></iframe>
+            </div>
+            <ul class="project-card__stack">
+              <li>React</li>
+              <li>Vite</li>
+              <li>CSS Animations</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/olumideakinloye" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://news-portal-302.netlify.app/" target="_blank" rel="noopener">Try Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Multiplayer Ludo Game</h3>
+            <p class="project-card__desc">
+              A fully playable browser-based multiplayer Ludo game with real-time
+              turn management, game state synchronisation, and animated piece movement.
+            </p>
+            <div class="project-card__preview">
+              <iframe src="https://olumideakinloye.github.io/Ludo/" frameborder="0"></iframe>
+            </div>
+
+            <ul class="project-card__stack">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Socket.io</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/olumideakinloye" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://olumideakinloye.github.io/Ludo/" target="_blank" rel="noopener">Try Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Todo App</h3>
+            <p class="project-card__desc">
+              A JAVA app that allows you to prioritize the tasks that are more important. This means you don't waste time
+              on tasks that don't require your immediate attention. Your list will help you stay focused on the tasks
+              that are the most important.
+            </p>
+            <ul class="project-card__stack">
+              <li>JAVA</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/olumideakinloye" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Real-Time Chat Application</h3>
+            <p class="project-card__desc">
+              A WebSocket-powered chat application with real-time messaging,
+              user authentication, and persistent message history.
+            </p>
+            <ul class="project-card__stack">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Socket.io</li>
+              <li>MongoDB</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/olumideakinloye" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ SKILLS ══════════════════════════════ -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <p class="section__eyebrow">Tech Stack</p>
+        <h2 class="section__title">Tools of the Trade</h2>
+        <div class="skills__grid">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-group__list">
+              <li>React / Next.js</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript (ES6+)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Backend</h3>
+            <ul class="skill-group__list">
+              <li>Node.js / Express</li>
+              <li>Python</li>
+              <li>REST APIs</li>
+              <li>Redis / Bull</li>
+              <li>JWT / Auth</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Database</h3>
+            <ul class="skill-group__list">
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Prisma ORM</li>
+              <li>Database Design</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Tooling</h3>
+            <ul class="skill-group__list">
+              <li>Git / GitHub</li>
+              <li>pnpm / Turborepo</li>
+              <li>Vite</li>
+              <li>Zod Validation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CONTACT ══════════════════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__inner">
+        <p class="section__eyebrow">Get In Touch</p>
+        <h2 class="section__title">Let's Build Something.</h2>
+        <p class="contact__sub">
+          Open to internship opportunities, freelance projects, and collaboration.
+          Drop me a message and I'll get back to you.
+        </p>
+        <div class="contact__links">
+          <a href="tel:+2348056349029" rel="noreferrer" class="contact__link">
+            <span class="contact__link-label">Phone</span>
+            <span class="contact__link-value">+234 805 634 9029 ↗</span>
+          </a>
+          <a href="mailto:olumike3108@gmail.com" class="contact__link">
+            <span class="contact__link-label">Email</span>
+            <span class="contact__link-value">olumike3108@gmail.com ↗</span>
+          </a>
+          <a href="https://github.com/olumideakinloye" target="_blank" rel="noopener" class="contact__link">
+            <span class="contact__link-label">GitHub</span>
+            <span class="contact__link-value">github.com/olumideakinloye ↗</span>
+          </a>
+          <a href="https://linkedin.com/in/olumide-akinloye-65383b37a" target="_blank" rel="noopener"
+            class="contact__link">
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">Connect with me ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="nav__logo">AO<span>.</span></span>
+      <p>© 2026 Akinloye Olumide Michael. Built with HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
