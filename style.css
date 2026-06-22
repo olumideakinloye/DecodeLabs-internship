@@ -178,9 +178,11 @@ ul {
 
 .nav {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
-  height: 68px;
+  /* height: 68px; */
+  padding: 1rem;
+  position: relative;
 }
 
 .nav__logo {
@@ -189,6 +191,7 @@ ul {
   font-weight: 900;
   color: var(--clr-dark);
   letter-spacing: -0.02em;
+  justify-self: start;
 }
 
 .nav__logo span {
@@ -238,6 +241,8 @@ ul {
   border: none;
   cursor: pointer;
   padding: 4px;
+  height: 100%;
+  padding-top: 0.8rem;
 }
 
 .nav__toggle span {
@@ -872,13 +877,10 @@ ul {
 @media (max-width: 600px) {
   .nav__links {
     display: none;
-    position: fixed;
-    inset: 68px 0 0 0;
-    background: var(--clr-bg);
+    padding-top: 5rem;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: var(--space-md);
+    gap: 3rem;
     z-index: 99;
   }
 
